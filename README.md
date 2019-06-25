@@ -5,6 +5,11 @@
 
 > um desafio proposto para aqueles que estao aprendendo reactjs
 
+## Api's
+
+- [All books](https://www.googleapis.com/books/v1/volumes?q=SEARCH_TERM)
+- [Book Details](https://www.googleapis.com/books/v1/volumes/```ID```)
+
 ## Install
 
 ```sh
@@ -27,11 +32,12 @@ yarn test
 
 👤 **Guilherme**
 
-* Github: [@GuilhermeGuiuler](https://github.com/GuilhermeGuiuler)
+- Github: [@GuilhermeGuiuler](https://github.com/GuilhermeGuiuler)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
