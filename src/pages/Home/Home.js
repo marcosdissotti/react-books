@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+
+import './styles.css'
 
 import api from '../../services/api'
 
@@ -18,10 +21,12 @@ function Home(){
     }, [])
 
     return (
-        <main>
-            <div>
-            {books.map(book => (
-                 <img src={`${book.volumeInfo.imageLinks.thumbnail}`}></img>
+        <main className="home">
+            <div className="flex-container">
+                {books.map(book => (
+                    <Link to={`/details/${book.id}`} class="livro-item">
+                        <img src={`${book.volumeInfo.imageLinks.thumbnail}`}></img>
+                    </Link>
                ))} 
             </div>
         </main>

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.home {
+    background-color: #FFDD0D;
+}
+
+img {
+    max-width: 100%;
+}
+
+.livro-item {
+    width: 100px;
+    margin: 5px;
+    flex-grow: 0;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left {
+    justify-content: left;
+}
+
+
+.right {
+    justify-content: right;
+}
