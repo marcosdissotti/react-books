@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Fragment } from 'react'
 
 import './styles.css'
 
@@ -19,22 +19,28 @@ function Details({ match }){
     }, [])
 
     return (
-        <main className="home">
+        <Fragment>
             {console.log(book)}
-            <div className="flex-container">
-                <div className="livro-item">
-                    <div className="left">
+            <div className="row-principal">
+                <div className="column grow">
+                    <div className="livro">
                         <img src={book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail}></img>
                     </div>
-                    
-                    <div className="right">
+                </div>
+                
+                <div className="column grow">
+                    <div className="describe">
                         <p>{book.volumeInfo && book.volumeInfo.title}</p>
-                        <p>by {book.volumeInfo && book.volumeInfo.authors }</p>
+                    </div>
+                    <div className="row-item">
+                        <p>by {book.volumeInfo && book.volumeInfo.authors}</p>
+                    </div>
+                    <div className="row-item">
                         <p>{book.saleInfo && book.saleInfo.listPrice.amount}</p>
                     </div>
                 </div>
             </div>
-        </main>
+        </Fragment>
     );
 }
 

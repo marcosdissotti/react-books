@@ -2,32 +2,43 @@
     margin: 0;
     padding: 0;
 }
+
 .home {
     background-color: #FFDD0D;
 }
 
-img {
-    max-width: 100%;
-}
 
-.livro-item {
-    width: 100px;
-    margin: 5px;
-    flex-grow: 0;
-}
-
-
-.flex-container {
+.row-principal {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    width: 100%;
 }
 
-.left {
-    justify-content: left;
+.describe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: baseline;
+}
+
+.livro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: baseline;
 }
 
 
-.right {
-    justify-content: right;
+.grow {
+    flex-grow: 1;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }

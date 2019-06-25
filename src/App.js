@@ -7,11 +7,9 @@ import Details from './pages/Details/Details'
 function App() {
   return (
     <Router>
-      <div>
         <Route exact path="/" component={Home} />
         <Route exact path="/details/:id" component={Details} />
-      </div>
-  </Router>
+    </Router>
   );
 }
 
