@@ -8,7 +8,7 @@
 ## Api's
 
 - [All books](https://www.googleapis.com/books/v1/volumes?q=SEARCH_TERM)
-- [Book Details](https://www.googleapis.com/books/v1/volumes/```ID```)
+- [Book Details](https://www.googleapis.com/books/v1/volumes/PoeTAgAAQBAJ) https://www.googleapis.com/books/v1/volumes/id
 
 ## Install
 
